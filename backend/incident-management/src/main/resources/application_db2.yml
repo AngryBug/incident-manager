@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:incidentmanager-db
+    driver-class-name: org.h2.Driver
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2
+server:
+  port: 8080
